@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../logo.jpg";
+import logo from "../logo.png";
 // import {Login}  from '../routes/Login';
 // import {Register } from '../routes/Register';
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -11,7 +11,7 @@ const Navbar = () => {
   
   return (
     <>
-    {/* <div className="Header"> */}
+    <div className="Nav">
     <div className="lgo">
         <Link to="/">
         <img src={logo} alt="HOME" />
@@ -51,7 +51,7 @@ const Navbar = () => {
           (<FaBars size={20} />)}
         </div>
     </div>
-    {/* </div> */}
+    </div>
     </>
   );
 };

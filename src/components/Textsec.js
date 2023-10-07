@@ -7,22 +7,27 @@ import home1 from '../HomepageImages/cat.jpg';
 import home2 from '../HomepageImages/fish.jpg';
 import home4 from '../HomepageImages/dog.jpg';
 import home3 from '../HomepageImages/petShop.avif';
+import home5 from '../HomepageImages/pws.png';
 const Textarea = () => {
   return (
     <>
     <div className='text'>
-      <h1>Lovely</h1>
-      <h1> Aquarium </h1>
-      <h1>and Pet Shop</h1>
+      <h1>Lovely Aquarium </h1>
+      <h1> And  Pet Shop</h1>
+      {/* <h1> Pet Shop</h1> */}
     </div>
 
       <div className='LR'>
-        <li className="e1">
+        <div className="e1">
          <Link to="/login">Login</Link>
-       </li>
-       <li className="e1">
+       </div>
+       <div className="e2">
        <Link to="/register">Register</Link>
-       </li>
+       </div>
+
+      </div>
+      <div className='paws'>
+      <img id='img5'src={home5} alt="HOME1" />
       </div>
     <div className='ImgBox'>
       <div className='ImgBox1'>

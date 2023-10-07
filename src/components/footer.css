@@ -1,0 +1,28 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .shop-info {
+    text-align: left;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  

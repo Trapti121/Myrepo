@@ -2,12 +2,15 @@ import './App.css';
 import "./index.css";
 import React, {useState} from "react";
 import Home from "./routes/Home";
-import About from "./routes/About";
-import Categories from "./routes/Categories";
-import Contact from "./routes/Contact";
+import Dogs from "./routes/Dogs";
+import Cats from "./routes/Cats";
+import Fishes from "./routes/Fishes";
+import Birds from "./routes/Birds";
 import { Route, Routes } from 'react-router-dom';
 import { Login } from './routes/Login';
 import { Register } from './routes/Register';
+import EnquiryForm from './components/EnquiryForm';
+
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
   const toggleForm = (formName) => {
@@ -15,17 +18,18 @@ function App() {
   }
   
   return (
-    <>
-    {/* <div className='LR'>
-      {
-    currentForm === "login"? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
-    </div> */}
+   <>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/categories" element={<Categories/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/dogs" element={<Dogs/>}/>
+      
+      <Route path="/cats" element={<Cats/>}/>
+      
+      <Route path="/birds" element={<Birds/>}/>
+      
+      <Route path="/fishes" element={<Fishes/>}/>
+      <Route path="/fishes/sendenquiry/:id" element={<EnquiryForm/>}/>
+      
       <Route path="/login" element={<Login onFormSwitch={toggleForm} />} />
       <Route path="/register" element={<Register onFormSwitch={toggleForm} />} />
       </Routes>

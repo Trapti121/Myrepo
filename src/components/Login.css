@@ -1,5 +1,5 @@
 body.login-body {   
-     background-image: url('../Pet_Img3.jpg');
+     background-image: url('../Pet_Img3.png');
     background-repeat: no-repeat;
     background-size:100% ;
 }
@@ -24,7 +24,7 @@ body.login-body {
     opacity:0.8;
     margin-left :24em ;
     border: black;
-    background-color: rgb(52, 50, 49);
+    background-color: rgb(119, 117, 116);
     height: 25em;
 }
 .Form label {
@@ -43,8 +43,6 @@ body.login-body {
     padding: 10px;
     margin: 20px;
     background-color: #ffffff;
-    color: #ffffff;
-    /* margin:auto; */
     border-radius: 4em;
     display: flex;
   }

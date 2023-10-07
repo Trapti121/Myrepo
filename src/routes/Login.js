@@ -10,10 +10,9 @@ export const Login = (props) => {
   };
 
   useEffect(() => {
-    // Add the 'login-body' class to the body element
     document.body.classList.add('login-body');
 
-    // Clean up the class on component unmount
+
     return () => {
       document.body.classList.remove('login-body');
     };
