@@ -60,7 +60,7 @@ body.login-body {
     text-decoration: none;
     color: #9e9d9d;
   }
-  @media screen and (max-width: 1040px) {
+  @media screen and (min-width: 360px) and (max-width: 740px) {
     body.login-body {   
      background-image: none;
      background-color: rgb(244, 160, 179);
@@ -68,16 +68,53 @@ body.login-body {
  .Form{
   position:absolute;
   padding: auto;
-  right:0.2em;
-  width:20em;
-  
+  width:80%;
   text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 10em;
-    margin: 25px 1px 75px 10px;
-    padding: auto
-}
+    top: -2rem;
+    right: 2em;
+    padding: auto;
+ }
+ .Form label {
+    color: #ffffff;
+    font-weight: bold;
+    position: inherit;
+    align-items: left;
+    justify-self: start;
+    font-size: small;
+  }
+  .Form h1{
+    color: #ffffff;
+     font-size: 2rem;
+    margin-bottom: 1em;
+    margin-top:-5rem;
+  }
+  .Form input {
+    width: 15rem;
+    padding: 2px;
+    margin: 4px;
+    border-radius: 0.4rem;
+    border-color: rgb(164, 120, 127);
+    display: flex;
+  }
+  
+  .Form button {
+    cursor: pointer;
+    background:rgb(0, 7, 9);
+    color: #ffffff;
+    padding: 4px 6px;
+    border: none;
+    margin: 0.2em;
+    border-radius: 0.4em;
+    cursor: pointer;
+    font-size: small;
+  }
+  .Form button a{
+     text-decoration: none;
+     color: #9e9d9d;
+     font-size: small;
+   }
   }
  

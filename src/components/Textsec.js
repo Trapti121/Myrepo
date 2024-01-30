@@ -1,7 +1,5 @@
 import React from 'react'
 import './Textsec.css';
-// import {Login}  from '../routes/Login';
-// import {Register } from '../routes/Register';
 import { Link } from "react-router-dom";
 import home1 from '../HomepageImages/cat.jpg';
 import home2 from '../HomepageImages/fish.jpg';
@@ -14,7 +12,6 @@ const Textarea = () => {
     <div className='text'>
       <h1>Lovely Aquarium </h1>
       <h1> And  Pet Shop</h1>
-      {/* <h1> Pet Shop</h1> */}
     </div>
 
       <div className='LR'>
@@ -24,7 +21,7 @@ const Textarea = () => {
        <div className="e2">
        <Link to="/register">Register</Link>
        </div>
-
+        
       </div>
       <div className='paws'>
       <img id='img5'src={home5} alt="HOME1" />

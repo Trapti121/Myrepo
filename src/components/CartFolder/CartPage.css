@@ -1,0 +1,16 @@
+.CartBox{
+    margin-left: 150px;
+    margin-right: 105px;
+    margin-top: 2rem;
+    background:rgb(237, 151, 151);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    
+}
+.Header h3{
+    margin-top: 1.4rem;
+    margin-left:36rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    color: #0f0f0f;
+}

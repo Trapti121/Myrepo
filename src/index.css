@@ -4,8 +4,8 @@
     margin:0;
     padding:0;
     background: none;
+    overflow-x: hidden;
     font-family: "Outfit", sans-serif;
-
 }
 h1, h4, p, a{
   color:#171313;

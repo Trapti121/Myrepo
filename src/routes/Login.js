@@ -1,14 +1,48 @@
 import React, { useState, useEffect } from 'react';
+import axios from "axios"
 import '../components/Login.css';
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from 'react-router-dom';
+
 export const Login = (props) => {
+
+  const history=useNavigate();
+
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(email);
+      };
+  async function submit(e){
     e.preventDefault();
-    console.log(email);
-  };
 
+    try{
+
+        await axios.post("http://localhost:8000/login",{
+            email,pass
+        })
+        .then(res=>{
+            if(res.data==="exist"){
+                alert("USer signed in")
+                history("/")
+            }
+            else if(res.data==="notexist"){
+                alert("User have not Registered!")
+                history("/register")
+            }
+        })
+        .catch(e=>{
+            alert("wrong details")
+            console.log(e);
+        })
+
+    }
+    catch(e){
+        console.log(e);
+
+    }
+
+};
   useEffect(() => {
     document.body.classList.add('login-body');
 
@@ -18,7 +52,7 @@ export const Login = (props) => {
     };
   }, []);
 
-  return (
+    return (
     <>
       <div className="Box">
         <div className="Form">
@@ -42,7 +76,7 @@ export const Login = (props) => {
               id="password"
               name="password"
             />
-            <button type="submit">Log In</button>
+           <button type="submit" onClick={submit} > Login </button>
           </form>
           <button>
           <Link to="/register">Don't have an account? Register here.</Link>
@@ -52,5 +86,4 @@ export const Login = (props) => {
     </>
   );
 };
-
-
+export default Login

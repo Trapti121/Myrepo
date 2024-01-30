@@ -1,0 +1,77 @@
+.Textsec1Box{
+    display:flex;
+}
+.TextSec1Container{
+    /* background-color: antiquewhite; */
+    box-shadow: 0 3px 8px rgb(9, 9, 9);
+    margin: 1rem;
+    margin-top: 4rem;
+}
+.TextSec1Container h1{
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: -2rem;
+    font-family:sans-serif;
+    margin-top: 2rem;
+}
+#im1{
+    height:26rem;
+    width: 50rem;
+    margin-left: 1rem;
+    margin-top: 1.4rem;
+}
+#im2{
+    height:26rem;
+    width: 50rem;
+    margin-left: -7rem;
+    margin-top: 2.6rem;
+}
+#im3{
+    height:27rem;
+    width: 50rem;
+    margin-left: -6rem;
+    margin-top: 1.4rem;
+    
+}
+#im4{
+    height:27rem;
+    width: 50rem;
+    margin-left: -16rem;
+    margin-top: .2rem;
+}
+.TextSec2Container{
+    margin: 1rem;
+    box-shadow: 0 3px 8px rgb(67, 63, 63);
+    padding: 2rem;
+}
+.TextSec2Container h1{
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family:sans-serif;
+}
+#im5{
+    height:16rem;
+    width: 14rem;
+    margin-left: 11rem;
+    margin-top: 1.4rem;
+}
+#im6{
+    height:16rem;
+    width: 14rem;
+    margin-left: 6rem;
+    margin-top: 1.4rem;
+}
+#im7{
+    height:16rem;
+    width: 14rem;
+    margin-left: 6rem;
+    margin-top: 1.4rem;
+    
+}
+#im8{
+    height:16rem;
+    width: 14rem;
+    margin-left: 6rem;
+    margin-top: 1.4rem;
+}

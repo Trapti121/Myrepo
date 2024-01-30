@@ -1,28 +1,110 @@
+
 footer {
-    background-color: #333;
-    color: #fff;
+     background-color: #e9e6e6;
+    overflow: hidden;
+    width: 100vw;
     padding: 20px;
+    height: 30vh;
     text-align: center;
+    font-family:"Quicksand", sans-serif; ;
   }
   
   .footer-content {
+    
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    /* margin: 0 auto; */
+   margin-left:3rem ;
+    color: Black;
+    /* position: relative; */
   }
-  
-  .shop-info {
+  .shop-info{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    margin-left: -57rem;
+    width: 25%;
+  }
+  .shop-info h3{
+   text-align: left;
+   
+  }
+
+  .shop-info p {
     text-align: left;
+    color: grey;
+    font-weight: 420;
+    padding: .5rem;
+    justify-content: end;
   }
   
+  .social-links{
+    display: flex;
+    margin-left: 1rem;
+    padding: .5rem;
+  }
   .social-links a {
-    color: #fff;
+    
+    color: grey;
     text-decoration: none;
     margin-right: 15px;
+
+   
   }
   
   .social-links a:hover {
-    text-decoration: underline;
+    color: blue;
   }
-  
+  .Support h3{
+    padding-bottom: .5rem;
+    left:.01rem;
+    position: relative;
+  }
+  .Support{
+    
+   position:absolute;
+   left:43rem;
+   display: flex;
+   flex-direction: column;
+   text-align: left;  
+  }
+  .Support a{
+    color: grey; 
+    font-weight: 420;
+  } 
+  .Shop h3{
+    padding-bottom: .5rem;
+    left:0rem;
+    position: relative;
+  }
+  .Shop{
+    
+   position:absolute;
+   left:59rem;
+   display: flex;
+   flex-direction: column;
+   text-align: left;  
+  }
+  .Shop a{
+    color: grey;
+    font-weight: 420;
+  }
+  .contact_us h3{
+    padding-bottom: .5rem;
+    left:.01rem;
+    position: relative;
+  }
+  .contact_us{
+    
+   position:absolute;
+   left:72rem;
+   display: flex;
+   flex-direction: column;
+   text-align: left;  
+  }
+  .contact_us p{
+    padding: .3rem;
+    color: grey;
+    font-weight: 420;
+  }

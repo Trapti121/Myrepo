@@ -1,6 +1,7 @@
 import React from 'react';
-import Birdpage from '../components/Birdpage';
+import Birdpage from '../components/BirdsFolder/Birdpage';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 function Birds() {
   return(
     <>
@@ -8,6 +9,7 @@ function Birds() {
     <div >
       <Birdpage/>
     </div>
+    <div><Footer/></div>
    </>
   );
 }

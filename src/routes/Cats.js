@@ -1,6 +1,7 @@
 import React from 'react';
-import Catpage from '../components/Catpage';
+import Catpage from '../components/CatFolder/Catpage';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 function Dogs() {
   return(
     <>
@@ -8,6 +9,7 @@ function Dogs() {
     <div >
       <Catpage/>
     </div>
+    <div><Footer/></div>
    </>
   );
 }

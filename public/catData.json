@@ -3,60 +3,60 @@
       "id": 1,
       "name": "Bombay Cat",
       "price":50000,
-      "imageUrl": "/dogpageimages/GermanShepherd.jpg"
+      "imageUrl": "/catpageimages/BombayCat.jpeg"
     },
     {
       "id": 2,
       "name": "Himalayan Cat",
       "price":20800,
-      "imageUrl": "/dogpageimages/GoldenRetriever.png"
+      "imageUrl": "/catpageimages/HimalayanCat.jpg"
     },
     {
       "id": 3,
-      "name": "siamese cat",
+      "name": "Siamese cat",
       "price":44300,
-      "imageUrl": "/dogpageimages/Pomeranian.jpg"
+      "imageUrl": "/catpageimages/SiameseCat.webp"
     },
     {
       "id": 4,
       "name": "Rusty Spotted",
       "price":5000,
-      "imageUrl": "/dogpageimages/Beagle.jpg"
+      "imageUrl": "/catpageimages/RustySpotted.jpeg"
     },
     {
       "id": 5,
       "name": "Persian cat",
       "price":26000,
-      "imageUrl": "/dogpageimages/Dachshund.jpg"
+      "imageUrl": "/catpageimages/PersianCat.jpg"
     },
     {
       "id": 6,
       "name": "Maine coon",
       "price":43000,
-      "imageUrl": "/dogpageimages/Doberman.jpg"
+      "imageUrl": "/catpageimages/Mainecoon.jpg"
     },
     {
       "id": 7,
-      "name": "Bengal/ Leapord cat",
+      "name": "Leapord cat",
       "price":33500,
-      "imageUrl": "/dogpageimages/IndianPariah.jpg"
+      "imageUrl": "/catpageimages/LeapordCat.jpg"
     },
     {
       "id": 8,
       "name": "Turkish van",
       "price":40200,
-      "imageUrl": "/dogpageimages/Labrador.jpg"
+      "imageUrl": "/catpageimages/Turkishvan.jpg"
     },
     {
       "id": 9,
       "name": "Birman Cat",
       "price":17600,
-      "imageUrl": "/dogpageimages/Pug.jpeg"
+      "imageUrl": "/catpageimages/BirmanCat.jpg"
     },
     {
       "id": 10,
       "name": "Ragdoll cat",
       "price":28000,
-      "imageUrl": "/dogpageimages/Rottweiler.jpg"
+      "imageUrl": "/catpageimages/RagdollCat.jpg"
     }
   ]

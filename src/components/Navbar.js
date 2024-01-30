@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./Navbar.css";
+import {FaEnvelope,FaShoppingCart} from 'react-icons/fa';
 import logo from "../logo.png";
-// import {Login}  from '../routes/Login';
-// import {Register } from '../routes/Register';
 import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [click, setClick]= useState(false);
@@ -18,7 +17,6 @@ const Navbar = () => {
         </Link>
         </div>
     <div className="header">
-    
         <ul className={click? "nav-menu active": "nav-menu"}>
         <li className="a1">
           <Link to="/">Home</Link>
@@ -36,15 +34,23 @@ const Navbar = () => {
           <Link to="/Fishes">Fish</Link>
         </li>
         <li className="d1">
-          <Link to="/About">Aboutus</Link>
+          <Link to="/feedback">Feedback</Link>
         </li>
-        {/* <li className="e1">
-         <Link to="/login">Login</Link>
-       </li>
-       <li className="e1">
-       <Link to="/register">Register</Link>
-       </li> */}
+
         </ul> 
+          <div className="connect">
+        <div className="cart1">
+          <Link to="/cart">
+            <FaShoppingCart />
+          </Link>
+          <div className="para">{}</div>
+        </div>
+        <div className="icon1">
+          <p>
+            <FaEnvelope />
+          </p>
+        </div>
+      </div>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
           <FaTimes size={20} style ={{color: "#fff"} }/>):
