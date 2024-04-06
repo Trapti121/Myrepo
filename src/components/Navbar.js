@@ -7,7 +7,12 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [click, setClick]= useState(false);
   const handleClick = () => setClick(!click);
-  
+  const auth = localStorage.getItem('userlogins');
+  const auth2=localStorage.getItem('adminlogins');
+  const logout=()=>{
+    localStorage.clear();
+    console.log("Logged out");
+  }
   return (
     <>
     <div className="Nav">
@@ -36,21 +41,24 @@ const Navbar = () => {
         <li className="d1">
           <Link to="/feedback">Feedback</Link>
         </li>
-
+        
         </ul> 
           <div className="connect">
-        <div className="cart1">
+          <button className="loginbtn" >
+          {auth || auth2 ? <Link onClick={logout} to="/initialpage"  >Logout</Link>:  <Link to="/initialpage"  >Login</Link>}
+         </button>
+         <div className="cart1">
           <Link to="/cart">
             <FaShoppingCart />
           </Link>
           <div className="para">{}</div>
-        </div>
-        <div className="icon1">
+         </div>
+         {/* <div className="icon1">
           <p>
-            <FaEnvelope />
+            <FaEnvelope/>
           </p>
+         </div> */}
         </div>
-      </div>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
           <FaTimes size={20} style ={{color: "#fff"} }/>):
@@ -63,3 +71,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

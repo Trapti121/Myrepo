@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card';
 import './Catpage.css';
+import axios from "axios";
 
 function Catpage() {
   const [selectedColor, setSelectedColor] = useState('Default');
@@ -16,11 +17,19 @@ function Catpage() {
     setSelectedOrder(sort);
   };
 
+  
   useEffect(() => {
-    fetch('catData.json')
-      .then((response) => response.json())
-      .then((data) => setCatDataList(data))
-      .catch((error) => console.error('Error fetching data:', error));
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:8001/cats');
+        console.log(response.data); 
+        setCatDataList(response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  
+    fetchData();
   }, []);
 
   const sortedCatDataList = catDataList.slice().sort((a, b) => {

@@ -75,3 +75,155 @@
     margin-left: 6rem;
     margin-top: 1.4rem;
 }
+@media screen and (max-width: 1443px) and (min-width: 760px){
+    .Textsec1Box{
+        display:flex;
+        flex-wrap: wrap;
+    
+    } 
+    .TextSec2Container{
+        margin-left: 10.5rem;
+        margin-right: 10rem;
+       width: 50rem;
+    }
+    .Textsec2Box{
+        display:flex;
+        flex-wrap: wrap;
+    
+    } 
+    .TextSec1Container{
+        margin-left: 10.5rem;
+        margin-right: 10rem;
+       width: 50rem;
+    }
+    #im1{
+        height:14rem;
+        width: 24rem;
+        margin-left: -1rem;
+        margin-top: 1rem;
+        padding: none;
+    }
+    #im2{
+        height:14rem;
+        width: 24rem;
+        margin-left: -1rem;
+        margin-top: 1rem;
+    }
+    #im3{
+        height:14rem;
+        width: 24rem;
+        margin-left: -1rem;
+        margin-top: 1rem;
+        
+    }
+    #im4{
+        height:14rem;
+        width: 24rem;
+        margin-left: -1rem;
+        margin-top: 1rem;
+    }
+    #im5{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    #im6{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    
+    }
+    #im7{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    #im8{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    .Textsec1Box{
+        display:flex;
+        flex-wrap: wrap;
+        width: 26rem;
+    } 
+    .TextSec2Container{
+        margin-left: 0.9rem;
+        margin-right: 0.1rem;
+       width: 26rem;
+       margin-top: 13rem;
+       z-index: 4004;
+       position: absolute;
+    }
+    .Textsec2Box{
+        display:flex;
+        flex-wrap: wrap;
+        width: 26rem;
+    } 
+    .TextSec1Container{
+        margin-left: 0.9rem;
+        margin-right: 0.5rem;
+       width: 26rem;
+       margin-top: 47rem;
+       z-index: 4004;
+       margin-bottom: 4rem;
+       position: absolute;
+    }
+    #im1{
+        height:24rem;
+        width: 44rem;
+        margin-left: -1.8rem;
+        margin-top: -1rem;
+    }
+    #im2{
+        height:24rem;
+        width: 44rem;
+        margin-left: -4rem;
+        margin-top: -3.8rem;
+    }
+    #im3{
+        height:24rem;
+        width: 44rem;
+        margin-left: -1rem;
+        margin-top: -5.5rem;
+        
+    }
+    #im4{
+        height:24rem;
+        width: 44rem;
+        margin-left: -6rem;
+        margin-top: -5.5rem;
+    }
+    #im5{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    #im6{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    
+    }
+    #im7{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    #im8{
+        height:12rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}

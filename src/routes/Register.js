@@ -16,6 +16,7 @@ export const Register = (props) => {
     e.preventDefault();
 
     try{
+      
 
         await axios.post("http://localhost:8000/signup",{
             email,pass

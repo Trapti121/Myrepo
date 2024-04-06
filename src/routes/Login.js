@@ -12,7 +12,7 @@ export const Login = (props) => {
   const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
-      };
+  };
   async function submit(e){
     e.preventDefault();
 
@@ -24,6 +24,9 @@ export const Login = (props) => {
         .then(res=>{
             if(res.data==="exist"){
                 alert("USer signed in")
+                 
+                console.log(res.config.data);
+                localStorage.setItem("userlogins",JSON.stringify(res.config.data));
                 history("/")
             }
             else if(res.data==="notexist"){
@@ -86,4 +89,4 @@ export const Login = (props) => {
     </>
   );
 };
-export default Login
+export default Login;

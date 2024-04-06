@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card';
 import './Dogpage.css';
+import axios from "axios";
 
 const Dogpage = () => {
   const [selectedColor, setSelectedColor] = useState('Default'); 
@@ -17,10 +18,17 @@ const Dogpage = () => {
   const [dogDataList, setdogDataList] = useState([]);
 
   useEffect(() => {
-    fetch('dogData.json')
-      .then((response) => response.json())
-      .then((data) => setdogDataList(data))
-      .catch((error) => console.error('Error fetching data:', error));
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:8001/dogs');
+        console.log(response.data); 
+        setdogDataList(response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  
+    fetchData();
   }, []);
 
   const filteredDogDataList = dogDataList.filter((dogData) => {

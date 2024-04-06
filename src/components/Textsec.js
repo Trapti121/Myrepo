@@ -1,12 +1,14 @@
 import React from 'react'
 import './Textsec.css';
 import { Link } from "react-router-dom";
+import {useState} from "react";
 import home1 from '../HomepageImages/cat.jpg';
 import home2 from '../HomepageImages/fish.jpg';
 import home4 from '../HomepageImages/dog.jpg';
 import home3 from '../HomepageImages/petShop.avif';
 import home5 from '../HomepageImages/pws.png';
 const Textarea = () => {
+  const [btnName, setBtnName]= useState("Login");
   return (
     <>
     <div className='text'>
@@ -16,7 +18,14 @@ const Textarea = () => {
 
       <div className='LR'>
         <div className="e1">
-         <Link to="/login">Login</Link>
+        <p onClick={()=>{
+          setBtnName("Logout");
+        }}> 
+        <Link to="/login">{btnName}
+        </Link>
+          {/* <Link to="/login">
+          {btnName}</Link> */}
+        </p>
        </div>
        <div className="e2">
        <Link to="/register">Register</Link>

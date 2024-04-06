@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card';
+import axios from "axios";
 import './Fishpage.css';
 function Fishpage() {
   const [selectedColor, setSelectedColor] = useState('Default');
@@ -16,11 +17,17 @@ function Fishpage() {
   const [FishDataList, setFishDataList] = useState([]);
 
   useEffect(() => {
-    // Fetch card data from the JSON file in the public folder
-    fetch('FishData.json')
-      .then((response) => response.json())
-      .then((data) => setFishDataList(data))
-      .catch((error) => console.error('Error fetching data:', error));
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:8001/fishs');
+        console.log(response.data); 
+        setFishDataList(response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  
+    fetchData();
   }, []);
   const sortedFishDataList = FishDataList.slice().sort((a, b) => {
     const priceA = a.price;
